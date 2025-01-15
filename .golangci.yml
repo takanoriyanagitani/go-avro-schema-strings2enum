@@ -1,0 +1,26 @@
+linters:
+  enable-all: true
+  disable:
+    - exportloopref
+    - wsl
+    - wrapcheck
+    - varnamelen
+    - stylecheck
+    - nonamedreturns
+    - nlreturn
+    - ireturn
+    - gochecknoglobals
+    - exhaustive
+    - err113
+    - depguard
+    - revive
+    - goimports
+    - godot
+    - gocritic
+    - gci
+    - forbidigo
+    - gofumpt
+
+linters-settings:
+  interfacebloat:
+    max: 16
