@@ -4,11 +4,9 @@ import (
 	"context"
 
 	ha "github.com/hamba/avro/v2"
-
 	se "github.com/takanoriyanagitani/go-avro-schema-strings2enum"
-	. "github.com/takanoriyanagitani/go-avro-schema-strings2enum/util"
-
 	s2 "github.com/takanoriyanagitani/go-avro-schema-strings2enum/strings2enum2schema"
+	. "github.com/takanoriyanagitani/go-avro-schema-strings2enum/util"
 )
 
 func StringsToEnumSchema(

@@ -7,13 +7,10 @@ import (
 	"os"
 
 	se "github.com/takanoriyanagitani/go-avro-schema-strings2enum"
-	. "github.com/takanoriyanagitani/go-avro-schema-strings2enum/util"
-
-	s2 "github.com/takanoriyanagitani/go-avro-schema-strings2enum/strings2enum2schema"
-
-	src "github.com/takanoriyanagitani/go-avro-schema-strings2enum/source"
-
 	en "github.com/takanoriyanagitani/go-avro-schema-strings2enum/avro/enum/hamba"
+	src "github.com/takanoriyanagitani/go-avro-schema-strings2enum/source"
+	s2 "github.com/takanoriyanagitani/go-avro-schema-strings2enum/strings2enum2schema"
+	. "github.com/takanoriyanagitani/go-avro-schema-strings2enum/util"
 )
 
 var EnvValByKey func(string) IO[string] = Lift(
