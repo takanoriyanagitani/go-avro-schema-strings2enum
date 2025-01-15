@@ -2,25 +2,26 @@ linters:
   enable-all: true
   disable:
     - exportloopref
-    - wsl
-    - wrapcheck
-    - varnamelen
-    - stylecheck
-    - nonamedreturns
-    - nlreturn
-    - ireturn
-    - gochecknoglobals
-    - exhaustive
-    - err113
-    - depguard
-    - revive
-    - goimports
-    - godot
-    - gocritic
-    - gci
     - forbidigo
-    - gofumpt
+    - revive
+    - depguard
+    - err113
+    - ireturn
+    - nlreturn
+    - wrapcheck
+    - wsl
+    - gochecknoglobals
+    - nonamedreturns
 
 linters-settings:
   interfacebloat:
     max: 16
+
+  varnamelen:
+    max-distance: 10
+
+issues:
+  exclude:
+    - ST1001
+    - ST1003
+    - ST1023
